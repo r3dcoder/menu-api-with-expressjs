@@ -52,12 +52,12 @@ async function readFile(path: any) {
 }
 
 export const findAll = async (): Promise<Item[]> => {
-  let iItems = (await readFile(
-    path.resolve(__dirname, "../data/db.json")
-  )) as Object;
-  writeFile(iItems);
+  // let iItems = (await readFile(
+  //   path.resolve(__dirname, "../data/db.json")
+  // )) as Object;
+  // writeFile(iItems);
 
-  return Object.values(iItems);
+  return Object.values(items);
 };
 
 export const find = async (id: number): Promise<Item> => {
