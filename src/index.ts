@@ -46,6 +46,6 @@ import { fileUploadRouter } from "./file-upload/file-upload.router";
 /**
  * Server Activation
  */
- app.listen(23491, () => {
+ app.listen(process.env.PORT || 7000, () => {
     console.log(`Listening on port 7000}`);
   });
